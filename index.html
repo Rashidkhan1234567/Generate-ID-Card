@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="Img/logo.jpeg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Student Form</title>
+  </head>
+  <body>
+    <div class="contanier">
+      
+      <div class="Student_form">
+        <div class="img">
+          <img class="img" src="Img/download.png" alt="Default Pic" />
+        </div>
+        <form id="studentForm">
+          <!--   USERNAME   -->
+          <div class="form-control">
+            <input type="text" required id="username" autocomplete="off" />
+            <label>
+              <span style="transition-delay: 0ms">U</span
+              ><span style="transition-delay: 50ms">s</span
+              ><span style="transition-delay: 100ms">e</span
+              ><span style="transition-delay: 150ms">r</span
+              ><span style="transition-delay: 200ms">n</span
+              ><span style="transition-delay: 250ms">a</span
+              ><span style="transition-delay: 300ms">m</span
+              ><span style="transition-delay: 350ms">e</span>
+            </label>
+          </div>
+
+          <!--   AGE   -->
+
+          <div class="form-control">
+            <input
+              type="text"
+              required
+              autocomplete="off"
+              id="age"
+              min="18"
+              max="30"
+            />
+            <label>
+              <span style="transition-delay: 0ms">A</span
+              ><span style="transition-delay: 50ms">g</span
+              ><span style="transition-delay: 100ms">e</span>
+            </label>
+          </div>
+
+          <!--   EMAIL   -->
+
+          <div class="form-control">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              autocomplete="off"
+              required
+            />
+            <label>
+              <span style="transition-delay: 0ms">E</span
+              ><span style="transition-delay: 50ms">m</span
+              ><span style="transition-delay: 100ms">a</span
+              ><span style="transition-delay: 150ms">i</span
+              ><span style="transition-delay: 200ms">l</span>
+            </label>
+          </div>
+
+          <!--   PHONE NUMBER    -->
+
+          <div class="form-control">
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              required
+              autocomplete="off"
+            />
+            <label>
+              <span style="transition-delay: 0ms">P</span
+              ><span style="transition-delay: 50ms">h</span
+              ><span style="transition-delay: 150ms">o</span
+              ><span style="transition-delay: 200ms">n</span
+              ><span style="transition-delay: 250ms">e</span
+              ><span style="transition-delay: 300ms"> </span
+              ><span style="transition-delay: 350ms">N</span
+              ><span style="transition-delay: 400ms">u</span
+              ><span style="transition-delay: 450ms">m</span
+              ><span style="transition-delay: 500ms">b</span
+              ><span style="transition-delay: 550ms">e</span
+              ><span style="transition-delay: 600ms">r</span>
+            </label>
+          </div>
+
+          <!--   GENDER   -->
+
+          <div class="radio-input">
+            <!-- male -->
+            <input
+              value="Male"
+              name="value-radio"
+              id="value-3"
+              type="radio"
+              class="input i_male"
+            />
+            <input
+              value="Female"
+              name="value-radio"
+              id="value-1"
+              type="radio"
+              class="input i_female"
+            />
+            <input
+              value="No-Gender"
+              name="value-radio"
+              id="value-2"
+              type="radio"
+              class="input i_no-gender"
+            />
+            <div class="card male">
+              <svg
+                class="logo"
+                width="48"
+                height="48"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.125 21a7.125 7.125 0 1 0 0-14.25 7.125 7.125 0 0 0 0 14.25Z"
+                ></path>
+                <path d="M21 7.5V3h-4.5"></path>
+                <path d="M15.188 8.813 21 3"></path>
+              </svg>
+              <div class="title">Male</div>
+            </div>
+            <div class="card female">
+              <svg
+                class="logo"
+                width="48"
+                height="48"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 15.75A7.125 7.125 0 1 0 12 1.5a7.125 7.125 0 0 0 0 14.25Z"
+                ></path>
+                <path d="M12 15.75v6.75"></path>
+                <path d="M14.719 19.5H9.28"></path>
+              </svg>
+              <div class="title">Female</div>
+            </div>
+            <div class="card no-gender">
+              <svg
+                class="logo"
+                width="48"
+                height="48"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.125 15.75a6.375 6.375 0 1 0 0-12.75 6.375 6.375 0 0 0 0 12.75Z"
+                ></path>
+                <path d="M10.125 16.5v6"></path>
+                <path d="M12.75 19.5H7.5"></path>
+                <path d="M20.25 5.25V1.5H16.5"></path>
+                <path d="M15.717 6.034 20.25 1.5"></path>
+              </svg>
+              <div class="title">N/A</div>
+            </div>
+          </div>
+          <button type="button" id="Generate">Generate</button>
+        </form>
+      </div>
+
+      <div class="save_cards">
+        <div class="head">
+          <h1>ID CARD</h1>
+          <button
+            class="relative inline-flex h-12 active:scale-95 transistion overflow-hidden rounded-lg p-[1px] focus:outline-none"
+          >
+            <span
+              class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#e7029a_0%,#f472b6_50%,#bd5fff_100%)]"
+            >
+            </span>
+            <span
+              class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2 undefined"
+            >
+              Counter :
+              <p id="count">0</p>
+            </span>
+          </button>
+        </div>
+        <div class="body" id="body"></div>
+      </div>
+      
+              <div class="editdisplay">
+                <h2>Edit ID Card</h2>
+                <form id="editForm">
+                  <div class="form-control">
+                    <input type="text" required id="edit_username" autocomplete="off" />
+                    <label>
+                      <span style="transition-delay: 0ms">U</span
+                      ><span style="transition-delay: 50ms">s</span
+                      ><span style="transition-delay: 100ms">e</span
+                      ><span style="transition-delay: 150ms">r</span
+                      ><span style="transition-delay: 200ms">n</span
+                      ><span style="transition-delay: 250ms">a</span
+                      ><span style="transition-delay: 300ms">m</span
+                      ><span style="transition-delay: 350ms">e</span>
+                    </label>
+                  </div>
+        
+                  <!--   AGE   -->
+        
+                  <div class="form-control">
+                    <input
+                      type="text"
+                      required
+                      autocomplete="off"
+                      id="edit_age"
+                      min="18"
+                      max="30"
+                    />
+                    <label>
+                      <span style="transition-delay: 0ms">A</span
+                      ><span style="transition-delay: 50ms">g</span
+                      ><span style="transition-delay: 100ms">e</span>
+                    </label>
+                  </div>
+        
+                  <!--   EMAIL   -->
+        
+                  <div class="form-control">
+                    <input
+                      type="text"
+                      id="edit_email"
+                      name="email"
+                      autocomplete="off"
+                      required
+                    />
+                    <label>
+                      <span style="transition-delay: 0ms">E</span
+                      ><span style="transition-delay: 50ms">m</span
+                      ><span style="transition-delay: 100ms">a</span
+                      ><span style="transition-delay: 150ms">i</span
+                      ><span style="transition-delay: 200ms">l</span>
+                    </label>
+                  </div>
+        
+                  <!--   PHONE NUMBER    -->
+        
+                  <div class="form-control">
+                    <input
+                      type="text"
+                      id="edit_phone"
+                      name="phone"
+                      required
+                      autocomplete="off"
+                    />
+                    <label>
+                      <span style="transition-delay: 0ms">P</span
+                      ><span style="transition-delay: 50ms">h</span
+                      ><span style="transition-delay: 150ms">o</span
+                      ><span style="transition-delay: 200ms">n</span
+                      ><span style="transition-delay: 250ms">e</span
+                      ><span style="transition-delay: 300ms"> </span
+                      ><span style="transition-delay: 350ms">N</span
+                      ><span style="transition-delay: 400ms">u</span
+                      ><span style="transition-delay: 450ms">m</span
+                      ><span style="transition-delay: 500ms">b</span
+                      ><span style="transition-delay: 550ms">e</span
+                      ><span style="transition-delay: 600ms">r</span>
+                    </label>
+                  </div>
+        
+                  <div class="radio-input">
+                    <input
+                      value="Male"
+                      name="edit_gender"
+                      id="edit_gender_male"
+                      type="radio"
+                      class="input i_male"
+                    />
+                    <input
+                    value="Female"
+                    name="edit_gender"
+                    id="edit_gender_female"
+                    type="radio"
+                      class="input i_female"
+                    />
+                    <input
+                    value="No-Gender"
+                    name="edit_gender"
+                    id="edit_gender_no-gender"
+                    type="radio"
+                      class="input i_no-gender"
+                    />
+                    <div class="card male">
+                      <svg
+                        class="logo"
+                        width="48"
+                        height="48"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.125 21a7.125 7.125 0 1 0 0-14.25 7.125 7.125 0 0 0 0 14.25Z"
+                        ></path>
+                        <path d="M21 7.5V3h-4.5"></path>
+                        <path d="M15.188 8.813 21 3"></path>
+                      </svg>
+                      <div class="title">Male</div>
+                    </div>
+                    <div class="card female">
+                      <svg
+                        class="logo"
+                        width="48"
+                        height="48"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M12 15.75A7.125 7.125 0 1 0 12 1.5a7.125 7.125 0 0 0 0 14.25Z"
+                        ></path>
+                        <path d="M12 15.75v6.75"></path>
+                        <path d="M14.719 19.5H9.28"></path>
+                      </svg>
+                      <div class="title">Female</div>
+                    </div>
+                    <div class="card no-gender">
+                      <svg
+                        class="logo"
+                        width="48"
+                        height="48"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.125 15.75a6.375 6.375 0 1 0 0-12.75 6.375 6.375 0 0 0 0 12.75Z"
+                        ></path>
+                        <path d="M10.125 16.5v6"></path>
+                        <path d="M12.75 19.5H7.5"></path>
+                        <path d="M20.25 5.25V1.5H16.5"></path>
+                        <path d="M15.717 6.034 20.25 1.5"></path>
+                      </svg>
+                      <div class="title">N/A</div>
+                    </div>
+      
+                  </div>
+                </form>
+                <button type="submit" id="submit">Save</button>
+                <button type="button" id="Cancel">Cancel</button>
+              </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
